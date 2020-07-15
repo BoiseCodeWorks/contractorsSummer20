@@ -35,6 +35,8 @@ namespace contractorssummer2020
       services.AddTransient<ContractorsRepository>();
       services.AddTransient<JobsService>();
       services.AddTransient<JobsRepository>();
+      services.AddTransient<BidsService>();
+      services.AddTransient<BidsRepository>();
     }
     private IDbConnection CreateDBContext()
     {
